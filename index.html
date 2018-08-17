@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TicTac Toe</title>
+
+    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body onload="ticTac();">
+    <div class="container">
+        <h1>Play Tic Tac Toe !</h1>
+        <table id="wrapper-playground">
+            <tr class="rows-playground">
+                <td id="cols-1" class="cols-playground" onclick="nextMoves(this)"></td>
+                <td id="cols-2" class="cols-playground" onclick="nextMoves(this)"></td>
+                <td id="cols-3" class="cols-playground" onclick="nextMoves(this)"></td>
+            </tr>
+            <tr class="rows-playground">
+                <td id="cols-4" class="cols-playground" onclick="nextMoves(this)"></td>
+                <td id="cols-5" class="cols-playground" onclick="nextMoves(this)"></td>
+                <td id="cols-6" class="cols-playground" onclick="nextMoves(this)"></td>
+            </tr>
+            <tr class="rows-playground">
+                <td id="cols-7" class="cols-playground" onclick="nextMoves(this)"></td>
+                <td id="cols-8" class="cols-playground" onclick="nextMoves(this)"></td>
+                <td id="cols-9" class="cols-playground" onclick="nextMoves(this)"></td>
+            </tr>
+        </table>
+        <br />
+        <h4 id="turn-message">turns</h4>
+        <br />
+        <br />
+        <button class="button" onclick="newGame()">
+            New Game
+            <div class="horizontal-effect"></div>
+            <div class="vertical-effect"></div>
+        </button>
+    </div>
+
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
